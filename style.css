@@ -1,0 +1,27 @@
+:root{
+    --bg-body: hsl(0, 0%, 8%);/*css custom property*/
+    --bg-contact: hsl(0, 0%, 14%);
+    --accent:hsl(153, 71%, 59%);
+    --text2:hsl(0, 0%, 85%);
+    --text1:hsl(0, 0%, 100%);
+    --invalid:hsl(7, 100%, 68%);
+}
+
+html{
+    box-sizing: border-box;/*so that the padding doesnt add to the width or the height of elements*/
+    font-size: 100%;/*so that the font size is taken from the browser based font styles*/
+}
+
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin:0;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--bg-body);
+    color:var(--text1);
+}
