@@ -1,27 +1,73 @@
-:root{
-    --bg-body: hsl(0, 0%, 8%);/*css custom property*/
-    --bg-contact: hsl(0, 0%, 14%);
-    --accent:hsl(153, 71%, 59%);
-    --text2:hsl(0, 0%, 85%);
-    --text1:hsl(0, 0%, 100%);
-    --invalid:hsl(7, 100%, 68%);
+/* GLOBAL */
+:root {
+  --bg-body: hsl(0, 0%, 8%); /*css custom property*/
+  --bg-contact: hsl(0, 0%, 14%);
+  --accent: hsl(153, 71%, 59%);
+  --text2: hsl(0, 0%, 85%);
+  --text1: hsl(0, 0%, 100%);
+  --invalid: hsl(7, 100%, 68%);
+  --fs-18: 1.125rem;
+  --fs-72: 4.5rem;
+  --fs-40: 2.5rem;
+  --fs-88: 5.5rem;
+  --fs-48: 3rem;
+  --fs-32: 2rem;
+  --fs-24: 1.5rem;
+  --container: 69.375rem; /*1110/16*/
 }
 
-html{
-    box-sizing: border-box;/*so that the padding doesnt add to the width or the height of elements*/
-    font-size: 100%;/*so that the font size is taken from the browser based font styles*/
+html {
+  box-sizing: border-box; /*so that the padding doesnt add to the width or the height of elements*/
+  font-size: 100%; /*so that the font size is taken from the browser based font styles*/
 }
-
 
 *,
 *::before,
-*::after{
-    box-sizing: inherit;
+*::after {
+  box-sizing: inherit;
 }
 
-body{
-    margin:0;
-    font-family: 'Space Grotesk', sans-serif;
-    background-color: var(--bg-body);
-    color:var(--text1);
+body {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text1);
+  font-size: var(--fs-18); /*16px is the default font size so 18/16 =1.125*/
+  line-height: 1.56;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.socials {
+  display: inline-block;
+}
+
+.socials:hover > svg > path {
+  fill: var(--accent);
+}
+
+.wrapper {
+  width: calc(100%-2rem);
+  max-width: var(--container);
+  /*to center it on larger viewport widths*/
+  margin-inline: auto;
+}
+
+@media (min-width: 37.5em) {
+  /*600/16*/
+  .wrapper {
+    width: calc(100%-3.75rem);
+  }
+}
+
+/* Header */
+.header {
+}
+.headerhome {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
+  color: var(--text1);
+  text-decoration: none;
 }
