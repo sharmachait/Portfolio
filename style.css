@@ -67,16 +67,15 @@ a:hover {
 }
 
 .wrapper {
-  width: calc(100%-2rem);
+  width: calc(100% - 2rem);
   max-width: var(--container);
-  /*to center it on larger viewport widths*/
   margin-inline: auto;
 }
 
+/* 600px */
 @media (min-width: 37.5em) {
-  /*600/16*/
   .wrapper {
-    width: calc(100%-3.75rem);
+    width: calc(100% - 3.75rem);
   }
 }
 
