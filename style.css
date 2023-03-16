@@ -45,18 +45,6 @@ a:hover {
   color: var(--accent);
 }
 
-.socials {
-  display: inline-block;
-}
-
-.socials > svg > path {
-  transition: fill var(--transition);
-}
-
-.socials:hover > svg > path {
-  fill: var(--accent);
-}
-
 .visuallyhidden {
   position: absolute;
   left: -10000px;
@@ -81,10 +69,47 @@ a:hover {
 
 /* Header */
 .header {
+  margin-top: 20px;
 }
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 20px 25px;
+}
+
 .headerhome {
   font-size: 1.5rem;
   font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
+  line-height: 1;
   color: var(--text1);
   text-decoration: none;
+  flex: 1 0 100%;
+}
+
+.socials svg {
+  display: block;
+}
+
+.socials > svg > path {
+  transition: fill var(--transition);
+}
+
+.socials:hover > svg > path {
+  fill: var(--accent);
+}
+
+@media (min-width: 37.5em) {
+  .nav {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 32px;
+  }
+  .headerhome {
+    flex: 1;
+    margin-inline-end: auto;
+  }
 }
