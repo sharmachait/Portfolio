@@ -98,8 +98,24 @@
 
     <main id="main">
       <section class="hero">
-        <div class="wrapper">
-          <img
+        <div class="wrapper hero_wrapper">
+          <picture class="hero_image">
+            <!-- <source
+              media="(min-width: 45em)"
+              srcset="/assets/images/DPGRAYNOBG.png"
+            />
+            <source
+              media="(min-width: 37.5em)"
+              srcset="/assets/images/DPGRAYNOBG.png"
+            /> -->
+            <img
+              src="/assets/images/DPGRAYNOBG.png"
+              alt="DP"
+              width="150px"
+              height="275px"
+            />
+          </picture>
+          <!-- <img
             src="/assets/images/DPGRAYNOBG.png"
             alt="DP"
             height="500px"
@@ -109,8 +125,14 @@
               /assets/images/DPGRAYNOBG.png 410w
             "
             sizes="(max-width: 599.98px) 46.4vw,(max-width: 999.98px) 41.9vw, 410px"
-          />
-          <h1>Nice to meet you!I am Chaitanya Sharma.</h1>
+          /> -->
+          <div class="hero_text">
+            <h1 class="hero_headline">
+              Nice to meet you!I am Chaitanya Sharma.
+            </h1>
+            <p class="hero_description">bakwas</p>
+            <a href="" class="hero_contact">Contact Me</a>
+          </div>
         </div>
       </section>
     </main>

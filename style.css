@@ -113,3 +113,23 @@ a:hover {
     margin-inline-end: auto;
   }
 }
+
+/* HERO */
+.hero {
+}
+.hero_wrapper {
+}
+.hero_text {
+}
+.hero_image {
+}
+.hero_headline {
+}
+.hero_description {
+}
+
+.hero_contact {
+  font-size: 1.5rem;
+  color: var(--text1);
+  text-decoration: none;
+}
